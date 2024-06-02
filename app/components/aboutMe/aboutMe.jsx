@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from './aboutMe.module.css';
-import me from '../../images/me.png';
+import me from '../../../public/static/images/me.png';
 
 const AboutMe = () => {
   return (

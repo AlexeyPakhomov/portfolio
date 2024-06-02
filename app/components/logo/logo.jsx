@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import '../../globals.css';
 import styles from './logo.module.css';
-import logo from '../../images/logo.png';
+import logo from '../../../public/static/images/logo.png';
+import '../../globals.css';
 
 const Logo = () => {
   return (

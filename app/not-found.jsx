@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import './globals.css';
 import styles from './not-found.module.css';
-import pedro from './images/pedroLoop.gif';
+import pedro from '../public/static/images/pedroLoop.gif';
 
 export default function NotFound() {
   return (
