@@ -1,0 +1,45 @@
+.header {
+  max-width: 100%;
+  min-height: 90px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header_desktop {
+  max-width: 1440px;
+  min-height: 90px;
+  margin: 0 auto;
+  padding: 10px 20px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  transition: opacity 0.3s;
+}
+
+.header_hidden {
+  opacity: 0;
+}
+
+.header_mobile {
+  padding: 10px 20px 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    'logo location burger'
+    'sideMenu sideMenu sideMenu';
+  row-gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header_desktop {
+    display: none;
+  }
+}

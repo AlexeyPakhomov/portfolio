@@ -1,0 +1,17 @@
+.header__logoContainer {
+  margin: 10px 0 0;
+  height: 36px;
+}
+
+.header__logo {
+  height: 100%;
+  width: auto;
+  opacity: 90%;
+}
+
+@media screen and (max-width: 767px) {
+  .header__logoContainer {
+    grid-area: logo;
+    height: 30px;
+  }
+}

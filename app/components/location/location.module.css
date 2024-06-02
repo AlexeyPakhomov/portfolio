@@ -1,0 +1,32 @@
+.location {
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  color: rgb(239, 239, 239);
+  letter-spacing: 0.5px;
+}
+
+.location__text {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.location__time {
+  margin: 0;
+  align-self: flex-end;
+  font-family: 'Supply';
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .location {
+    grid-area: location;
+    align-self: center;
+  }
+  .location__text {
+    align-self: center;
+  }
+  .location__time {
+    align-self: center;
+  }
+}

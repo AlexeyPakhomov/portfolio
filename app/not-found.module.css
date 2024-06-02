@@ -1,0 +1,34 @@
+.notFound {
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFoundTitle {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.notFoundPedro {
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+}
+
+.notFoundLink {
+  font-size: 1.8rem;
+  color: rgb(239, 239, 239);
+}
+
+.notFoundLink:visited {
+  color: rgb(239, 239, 239);
+}
