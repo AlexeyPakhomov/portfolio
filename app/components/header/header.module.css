@@ -23,6 +23,7 @@
 }
 
 .header_mobile {
+  height: 15vh;
   padding: 10px 20px 20px;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -30,6 +31,7 @@
     'logo location burger'
     'sideMenu sideMenu sideMenu';
   row-gap: 10px;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {

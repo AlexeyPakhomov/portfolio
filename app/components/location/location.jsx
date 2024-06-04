@@ -3,10 +3,10 @@ import styles from './location.module.css';
 import { getTime } from '../../utils/getTime';
 
 const Location = () => {
-  const [time, setTime] = useState(getTime());
+  const [time, setTime] = useState(null);
 
   useEffect(() => {
-    setInterval(() => setTime(getTime(), 100));
+    setInterval(() => setTime(getTime()), 100);
   }, []);
 
   return (

@@ -120,20 +120,29 @@
 
 @media screen and (max-width: 767px) {
   .nav {
-    height: 0;
+    height: 62px;
     opacity: 0;
     visibility: hidden;
     box-sizing: border-box;
-    transition: height 0.2s, opacity 0.2s;
-    border-radius: 10px;
+    background-color: transparent;
+    border: none;
   }
+
   .nav_active {
     height: 62px;
     opacity: 1;
     visibility: visible;
+    animation: translateMenu 1s 0.6s;
+    transition: opacity 0.3s 0.6s;
   }
-  .nav__btn {
-    transition: all 1s;
+}
+
+@keyframes translateMenu {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 
@@ -144,6 +153,9 @@
   }
   .nav_active {
     height: 60vh;
+    transform: translateY(20px);
+    animation: none;
+    transition: opacity 0.3s 0.6s, transform 1.5s 0.6s;
   }
   .nav__list {
     height: 30%;

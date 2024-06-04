@@ -2,10 +2,11 @@
 const nextConfig = {
   output: 'export',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'pakhomov.site',
+        hostname: 'localhost:3000',
         port: '',
         pathname: '/',
       },

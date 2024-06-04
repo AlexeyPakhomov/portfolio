@@ -12,7 +12,9 @@ const SideNavigation = () => {
   return (
     <>
       <div className={styles.header__burgerMenu}>
-        <button className={styles.header__burgerMenuContainer} onClick={handleClick}>
+        <button
+          className={`${styles.header__burgerMenuContainer} ${isOpen ? styles.open : ''}`}
+          onClick={handleClick}>
           <span></span>
           <span></span>
           <span></span>

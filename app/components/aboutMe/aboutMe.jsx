@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import styles from './aboutMe.module.css';
-import me from '../../../public/static/images/me.png';
 
 const AboutMe = () => {
   return (
@@ -19,7 +17,7 @@ const AboutMe = () => {
           <button className={styles.about__githubBtn}>Github</button>
         </a>
         <div className={styles.about__photoContainer}>
-          <Image src={me} className={styles.about__photo} alt="photo"></Image>
+          <div className={styles.about__photo}></div>
         </div>
       </div>
     </section>
